@@ -1,4 +1,4 @@
-This is my write-up for the TryHackMe Tempest challenge!
+This is my write-up for the TryHackMe Tempest challenge!  **Need to Redo this one
 
 Objective:
 - To analyze and handle various artifacts from a "compromised" machine. This was mostly done using Sysmon, which are logs that track and system activities and changes.
