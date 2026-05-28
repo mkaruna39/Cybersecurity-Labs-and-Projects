@@ -31,5 +31,6 @@ Advanced Prompting Methods (note: ask for reasoning if you want more than an ans
 
 Another note: When asking for repeatable tasks, you can use prompt templates rather than retyping everything which creates standardized responses
 
-The challenge for this room was to write prompts for real security tasks using the different methods.
-1) write a zero-shot prompt to classify whether a log entry is malicious
+The challenge for this room was to write prompts for real security tasks using the different methods. This one was definitely different because the prompts are very objective but I could tell the more indepth of a query I used, the more accurate of an answer I was receiving. 
+
+Overall, I learned about how to ask effective queries, the importance of tokens, and helpful parameters that can be set to direct responses in a certain way.
