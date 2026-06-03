@@ -1,7 +1,7 @@
 For this project, I decided to analyze a few AI-generated phishing emails and see what makes them so effective. 
 In the past few years, AI has been a tool for attackers to create even more convincing emails. My final result is a checklist of things to look for when identifying AI generated emails.
 
-Note: Because AI's will not generate content that can be used for malicious intents, these are just models with placeholders for information.
+Note: Because AI's will not generate content that can be used for malicious intents, these are just models with placeholders for information. These emails are just for practice, please DO NOT use them for anything other than academic/ learning purposes.
 
 Email #1:
 
