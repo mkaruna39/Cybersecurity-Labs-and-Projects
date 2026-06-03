@@ -6,7 +6,7 @@ Here are some of the additional big projects I want to work on this summer! I wa
 
 And of course, this is open to change
 
-1) Phishing Email Generator and Detector- use AI tools to generate convincing phishing emails, then analyze what makes them effective and create a checklist for identifying AI-generated social engineering
+1) Phishing Email Generator and Detector- use AI tools to generate convincing phishing emails, then analyze what makes them effective and create a checklist for identifying AI-generated social engineering  (Path: [1] Phishing Email Generator and Detector.md)
 2) Password Strength Checker- create a usable function to run and check the complexity of an entered password
 3) Risk Register Creation- develop a risk register for a fake organization, categorize them and track the likelyhood, impact and mitigation
 4) GRC Dashboard Development- build Dashboards using PowerBi to visualize risk levels, compliance score etc.
