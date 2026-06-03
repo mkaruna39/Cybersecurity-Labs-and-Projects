@@ -51,4 +51,34 @@ It can also create curiosity in the reader, because they have to respond to get 
 
 Summary: At a first glance, these emails can definitely be believable, but there are also ways to double check the legitimacy and make sure.
 
+1. Look at the sender
+  a) is the address expected
+  b) does the sender name match the email address
+  c) is the domain altered from typical ones
+  d) is it an external email source
 
+2. look for signs of manipulation
+   a) do they attempt to bypass normal chains of procedure
+   b) is it from an authority
+   c) do they mention consequences or rewards
+   d) a time urgency?
+
+3. Email context
+   a) reference projects that you do not know about
+   b) mention events that never happened
+   c) the use of generic descriptions
+   d) requesting information from the wrong department
+
+4. the requested action
+   a) requesting credentials?
+   b) payment information
+   c) gift cards
+   d) confidential files
+   e) attached documents or files
+
+5. any attached links
+   a) hover over the url and check if it matches with the displayed url
+   b) is it an unfamiliar domain
+   c) are they using URL shortening
+
+Of course, there are many other things you can check for as well. The main thing is to always follow up on unexpected emails. For example, if the email seems to be from the payroll department, contact them directly to inquire about any emails instead of responding to the suspicious email. This project was good for me to practice focusing on the small details that make phishing emails seem legitimate. It also increased my understanding of how powerful of a tool AI can be for attackers. On the other hand, it can also be used defensively as well. When trained with legitimate phishing emails, models can learn patterns found in these emails and block them before they even reach our inbox, greatly decreasing the chances of a threat.
