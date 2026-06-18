@@ -1,0 +1,15 @@
+This is the last capstone challenge for the SOC 1 pathway! 
+
+Situation: The threat actor Boogeyman was able to infilitrate the organization through another phishing email. I have access to logs through Elastic Stack (ELK).
+
+We were also given an estimate of the date range, so that helped narrow down the amount of logs that had to be looked through. 
+
+To begin, I tried to get more information about the initial payload. By looking up the name of the file in the logs, I was able to find the earliest event with a PID of 6392.
+
+By looking at the other processes under the payload name, I saw that the attacker tried to copy the the file to another location as well. In another entry, it was shown to have successfully run with the rundll32 executable.
+
+Some more information provided was that there was a persistance mechanism initiated by the payload, so I looked for rundll32 scheduled tasks. It was also shared that the file execution created a C2 connection. 
+
+To find the IP address information for this, I queried for powershell in ELK. Once that was done, I backtracked again. The next task shared that the administrator access was used. By looking up the name of the scheduled task again, I was able to find the process the attacker used for privilege escalation.
+
+It was also shared that the attacker tried to credential dump using github. After looking that up in the logs, I was able to discover
