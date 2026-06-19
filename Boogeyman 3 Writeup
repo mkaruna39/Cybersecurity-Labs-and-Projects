@@ -12,4 +12,18 @@ Some more information provided was that there was a persistance mechanism initia
 
 To find the IP address information for this, I queried for powershell in ELK. Once that was done, I backtracked again. The next task shared that the administrator access was used. By looking up the name of the scheduled task again, I was able to find the process the attacker used for privilege escalation.
 
-It was also shared that the attacker tried to credential dump using github. After looking that up in the logs, I was able to discover
+It was also shared that the attacker tried to credential dump using github. After looking that up in the logs, I was able to discover the exact link that was used to download the credential dumping tool.
+
+In the next task, it was shared that the attacker did successfully use credentials to access another machine. In the search bar, I queried again for the file downloaded as well as user*. With this, I was able to find the credentials the attacker used.
+
+The next step was going further down the logs, I had to find a file that the attacker tried to enumerate using the stolen credentials. This one, I did get stuck on so I had to look it up. However, in my search for the file, I stumbled across another set of credentials that were used. 
+This time, it also showed the host name of the computer that was used. 
+
+Next, I tried to find the parent process of the malicious command beind used. I started to do this by filtering for event.code=1 and the hostname i had just found. In that same search result, I also found the username of the newly dumped credentials.
+For some reason, I couldn't find the hash even though I used appropriate filter, but I could have missed it, this shows how helpful automation and paying close attention matters.
+
+There was also another 3rd account that was used. I found it by filtering for the parent command lines with event.code=1 and the host name. 
+
+The last task is to find the link for another file the attacker tried to download. This one I had to look up a hint for the filter since there are so many logs. The one that worked the fastest was searching http and filtering out the hostname and the event code.
+
+This capstone challenge was hard but interesting. The most difficult part by far was deciding what keywords and filters to use so that it decreased the amount of logs I had to search through. I will definitely have to do more practice with the log filters.
