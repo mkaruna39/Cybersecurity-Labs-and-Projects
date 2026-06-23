@@ -1,4 +1,4 @@
-This is my write-up for the TryHackMe Tempest challenge!  **Need to Redo this one
+This is my write-up for the TryHackMe Tempest challenge! 
 
 Objective:
 - To analyze and handle various artifacts from a "compromised" machine. This was mostly done using Sysmon, which are logs that track and system activities and changes.
@@ -19,4 +19,11 @@ Objective:
    After this, things began to become a little more difficult. Most of the skill was knowing what keywords to search for. For example, a big task was finding the command executed by the payload. Before doing this, I had to find the full path of the payload in the logs using the EventID 11 for file creation and the keyword startup, since in the previous task, it had been determined that execution happened upon startup.
 
 
-   The next set of tasks was done using Wireshark. This was useful for me to practice my commands. I already knew the host, so I was able to query for the URL to the payload.
+   The next set of tasks was done using Wireshark. This was useful for me to practice my commands. I already knew the host, so I was able to query for the URL to the payload. The rest of the analysis for that task was relatively simple, just extracting basic information from the wireshark packet.
+
+The main part of the next task is analyzing a sensitive file. I found the packet in wireshark using the domain name, and decoded the data in cyberchef. I then enumarated the list of ports on the desktop to see if any of them could have been used for remote command execution.
+
+The next step is to find the the reverse socks proxy the attacker used to create the connection. I actually had to look up a hint for this one. Once, I looked up "socks" in the logs, I found it.
+
+I definitely want to redo the 2nd half of this one for better understanding. This is one of the more difficult challenges I have done. I had to spend some time researching the correct keywords.
+   
