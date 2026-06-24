@@ -1,0 +1,22 @@
+Situation: A suspicious file was found on a user's machine that needs immediate review. The EDR has already released multiple alerts. 
+I have to analyse the file, collect anything to identify it, gather any potential IOCs, correlate and analyse the alerts for potential malicious behaviour. 
+
+Note: I was given a lot of built in tools and some I was not sure what their use was so I had do some research here.
+
+The first couple of questions was just doing analysis on the windows binary. Upon research, I found pestudio, a static analysis tool use for executablesw (without running them).
+
+The tool returned a report and I was quickly able to find the SHA256 hash of the file as well as its architecture (x64bit). A hint that I was given was that the URL within the file is an IOC. 
+After going into the indicators section of the results, I was able to find it. To find the domain, I ran a find strings command using the information from the URL. It also returned a string of text.
+
+After decoding it, using cyberchef from base 64, I was able to get the flag for the first task.
+
+The last question in this task was to find the library used by the binary for socket communication. Going back to pestudio in the libraries section, I looked through all the results until I found one referencing socket communication.
+
+The 2nd task required using a static analysis website. The entries imitate alerts from EDR systems. My first two steps was analyzing the urls from each flag. Looking at the commands for the first flag, I could see some the lines Frombase64(). I copied the text inside the parenthesis into cyberchef, and I was able to retrieve the URL's.
+
+The 2nd flag was actually in a format I did not immediately recognize. After looking it up, I learned they were charcode values. I was still able to decode them using the decimal mode in Cyberchef.
+
+The powershell command from the second alert also shared the file name that was saved.
+
+This challenge was another short one but I really liked. I got experience with pestudio, an incredible tool that I had never used before.
+
