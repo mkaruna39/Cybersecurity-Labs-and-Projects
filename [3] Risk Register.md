@@ -266,17 +266,13 @@ NIST CSF 2.0 Alignment
 Each identified risk was mapped to one of the six NIST Cybersecurity Framework (CSF) 2.0 Functions.
 
 NIST CSF Function	Risks Mapped
-Protect	8
 
-Respond	8
-
-Identify	8
-
-Recover	7
-
-Govern	5
-
-Detect	4
+- Protect	8
+- Respond	8
+- Identify	8
+- Recover	7
+- Govern	   5
+- Detect	   4
 
 The results show that the majority of identified risks fall within the Protect, Respond, and Identify functions. This suggests that strengthening preventive security controls, improving incident response capabilities, and enhancing asset and risk identification processes would have the greatest impact on reducing organizational cyber risk.
 
