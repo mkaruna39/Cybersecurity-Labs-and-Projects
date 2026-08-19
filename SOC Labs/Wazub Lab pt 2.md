@@ -1,4 +1,4 @@
-In this lab, I had the chance to explore how powerful Wazuh really is. Wazuh is popular for the reason that SOC teams can create custom detection rules to create alerts, easily removing thousands of insignificant logs, keeping only the relevant ones.
+
 
 # Wazuh Custom Detection Engineering & Threat Investigation Lab
 
